@@ -27,7 +27,9 @@ After processing a profile, the bot:
 - opens a **chat** where you can ask things like *"What is this person's current job title?"* or *"Where did they study?"*;
 - replies *"I don't know. The information is not available on the LinkedIn page."* when the profile doesn't contain the answer, which keeps responses grounded.
 
-![Gradio demo](assets/demo.png)
+![Workflow](Project.png)
+
+![Workflow](Backend.png)
 
 ## Features
 
@@ -58,22 +60,20 @@ icebreaker/
 ### Prerequisites
 
 - Python 3.11+
-- An IBM watsonx.ai account with an API key and project ID
-- A ProxyCurl API key (optional, only for live LinkedIn data)
+- An IBM watsonx.ai account with an API key and project ID (optional, for running within IBM Skills Network lab)
+- A Enrich Layer API key (The project making was initiated before May 2025. So, within the .py files, ProxyCurl is written, which is sued by LinkedIn and stopped operation.)
 
 ### Installation
 
 ```bash
-git clone https://github.com/YOUR-USERNAME/YOUR-REPO.git
-cd YOUR-REPO
+git clone https://github.com/wwazed/Icebreaker_Chatbot.git
+cd Icebreaker_Chatbot
 python -m venv venv
 source venv/bin/activate        # Windows: venv\Scripts\activate
 pip install -r requirements.txt
 ```
 
 ### API keys
-
-**Never commit API keys.** Keys are read from environment variables and are not stored in the repository.
 
 ```bash
 export WATSONX_APIKEY="your-watsonx-api-key"
@@ -120,4 +120,4 @@ MIT. See the `LICENSE` file.
 
 - IBM watsonx.ai for the LLM and embedding models
 - LlamaIndex for the indexing and retrieval framework
-- ProxyCurl for LinkedIn profile data
+- Enrich Layer API for LinkedIn profile data
