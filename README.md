@@ -8,7 +8,7 @@ Walking into a networking event, most people fall back on "So, what do you do?".
 
 ## How it works
 
-![Workflow](assets/workflow.svg)
+![Workflow](workflow.png)
 
 1. **Input**: a LinkedIn URL with a ProxyCurl API key, or the built-in mock profile (no key needed).
 2. **Extract and clean**: the profile JSON is fetched and empty or unneeded fields are removed.
